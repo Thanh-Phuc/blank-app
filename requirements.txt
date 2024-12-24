@@ -2,3 +2,4 @@ streamlit
 statsmodels
 altair
 pathlib
+plotly
