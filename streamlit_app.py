@@ -7,7 +7,7 @@ import altair as alt
 from pathlib import Path
 
 # Load your data
-path = Path(__file__).parent/'data/Top24_short.csv'
+path = Path(__file__).parent/'Top24_short.csv'
 # path = "/Users/thanhphucphan/Library/CloudStorage/GoogleDrive-phuc.phanthanh@gmail.com/My Drive/d931109001@tmu.edu.tw/Chiaki/Theses/Data/Top24_short.csv"
 data = pd.read_csv(path, delimiter=",")
 data['Datetime'] = pd.to_datetime(data['Datetime'], format='%m-%Y', errors='coerce')  # Parse dates, handle errors
